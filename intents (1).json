@@ -1,0 +1,434 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there","Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello", "Good to see you", "Hi there, how can I help?"],
+         "context": [""]
+        },
+
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye!"],
+         "context": [""]
+        },
+       
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+
+        {"tag": "work",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through the process of admission.", "Offering support to understand the steps of admission process"],
+         "context": [""]
+        },
+
+        {"tag": "college",
+         "patterns": ["Tell me something about the college.", "Can you describe the college.", "Give me details of the college."],
+         "responses": ["LTCOE or LT, established in 1992 , is a premier regional engineering college in Navi Mumbai affiliated with the University of Mumbai. It is a part of the University of Mumbai and its degrees are issued by the University. The college is approved by AICTE, New Delhi and is recognized by the government of Maharashtra."],
+         "context": [""]
+        },
+
+        {"tag": "address",
+         "patterns": ["What is the location of the college?.", "Address of the college.","Where is the college located?"],
+         "responses": ["Lokmanya Tilak College of Engineering, \nSector 4, Vikas Nagar, \nKoparkhairane, \nNavi Mumbai - 400 079."],
+         "context": [""]
+        },
+
+        {"tag": "distance",
+         "patterns": ["What is the distance of the college from nearest transport?.", "Distance of the college.","Distance of the college from transportation."],
+         "responses": ["Distance: \nBus Stand: 0.5 km \nRailway Station: Koparkhairane (0.7 km) \nAirport: Mumbai (25 km)"],
+         "context": [""]
+        },
+
+        {"tag": "courses",
+             "patterns": ["Which different courses are offered by the college?", "Which different courses are offered by the institution?", "Give me a list of courses offered.", "List all the courses offered"],
+             "responses": ["Different courses offered by the college are: \n1. Computer Engineering \n2. Mechanical Engineering \n3. EXTC Engineering \n4. Electronics Engineering \n5. Electrical Engineering"],
+             "context": ["course details"]
+        },
+
+        {"tag": "courses details",
+             "patterns": ["Give me details of courses are offered by the college", "Details of courses are offered by the institution", "Details of courses offered.", "List all the details of courses offered"],
+             "responses": ["Specify which course details you are searching for: \n1. Computer Engineering \n2. Mechanical Engineering \n3. Electronics & Telecommunication Engineering \n4. Electrical Engineering"],
+             "context": {"Computer Engineering":"Computer Engg. details","Mechanical Engineering":"Mechanical Engg. details","Electrical Engineering":"Electrical Engg. details","Electronics & Telecommunication Engineering":"EXTC Engg. details"}
+        },
+
+    	{"tag": "comps",
+         "patterns": ["Is computer branch is there?", "Do you have computer branch?", "Do this college have computer branch?" ],
+         "responses": ["Yes! We have Computer branch"],
+		 "context":[""]
+        },
+		
+        {"tag": "mech",
+         "patterns": ["Is mechanical branch is there?", "Do you have mechanical branch", "Do this college have mechanical branch"],
+         "responses": ["Yes! We have Mechanical branch"],
+		 "context":[""]
+        },
+
+        {"tag": "elec",
+         "patterns": ["Is electrical branch is there?", "Do you have celectrical branch", "Do this college have electrical branch"],
+         "responses": ["Yes! We have Electrical branch"],
+		 "context":[""]
+        },
+		
+        {"tag": "extc",
+         "patterns": ["Is extc branch is there?", "Do you have extc branch", "Do this college have extc branch"],
+         "responses": ["Yes! We have EXTC branch."],
+		 "context":[""]
+        },
+		
+        {"tag": "tronic",
+         "patterns": ["Is electronic branch is there?", "Do you have electronic branch?", "Do this college have electronic branch"],
+         "responses": ["No! We don't have Electronic branch"],
+		 "context":[""]
+        },
+		
+		{"tag": "IT",
+         "patterns": ["Is IT branch is there?", "Do you have IT branch", "Do this college have IT branch"],
+         "responses": ["No! We don't have IT branch"],
+		 "context":[""]
+        },
+
+    	{"tag": "comp_shifts",
+         "patterns": ["How many shifts are there in computer branch?", "Shifts for computer branch", "What are the shifts for computer branch"],
+         "responses": ["We only have one shift in Computer branch from 9:00 AM onwards"],
+		 "context":[""]
+        },
+		
+		{"tag": "mech_shifts",
+         "patterns": ["How many shifts are there in mechanical branch?", "Shifts for mechanical branch", "What are the shifts for mechanical branch"],
+         "responses": ["We have two shifts in mechenical branch one starts from 9:00 AM onwards and other starts from 11:00 AM onwards"],
+		 "context":[""]
+        },
+		
+		{"tag": "elect_shifts",
+         "patterns": ["How many shifts are there in electrical branch?", "Shifts for electrical branch", "What are the shifts for electrical branch"],
+         "responses": ["We only have one shift in electrical branch from 9:00 AM onwards"],
+		 "context":[""]
+        },
+		
+		{"tag": "extc_shifts",
+         "patterns": ["How many shifts are there in extc branch?", "Shifts for extc branch", "What are the shifts for extc branch"],
+         "responses": ["We only have one shift in Extc branch from 9:00 AM onwards"],
+		 "context":[""]
+        },
+		
+		{"tag": "comps_intake",
+         "patterns": ["How much is the intake for computer branch", "What is the intake for computer branch", "intake for computer branch"],
+         "responses": ["Intake for computer branch is around 120"],
+		 "context":[""]
+        },
+		
+		{"tag": "mech_intake",
+         "patterns": ["How much is the intake for mechanical branch", "What is the intake for mechanical branch","intake for mechanical branch" ],
+         "responses": ["Intake for mechanical branch is around 180"],
+		 "context":[""]
+        },
+		
+		{"tag": "elect_intake",
+         "patterns": ["How much is the intake for electrical branch", "What is the intake for electrical branch", "intake for electrical branch"],
+         "responses": ["Intake for electrical branch is around 60"],
+		 "context":[""]
+        },
+		
+		{"tag": "extc_intake",
+         "patterns": ["How much is the intake for computer branch", "What is the intake for computer branch","intake for extc branch" ],
+         "responses": ["Intake for extc branch is around 120"],
+		 "context":[""]
+        },
+
+        {"tag": "Computer Engg. details",
+             "patterns": ["Give me details of Computer Engineering course offered by the college", "Details of Computer Engineering course offered by the institution", "Details of Computer Engineering course offered.", "List all the details of Computer Engineering courses offered"],
+             "responses": ["Computer Engineering : \nProgram - B.E.  \nDuration - 4 years \nYear of Establishment - 1994 \nIntake - 120"],
+             "context": [""]
+        },
+
+        {"tag": "Mechanical Engg. details",
+             "patterns": ["Give me details of Mechanical Engineering course offered by the college", "Details of Mechanical Engineering course offered by the institution", "Details of Mechanical Engineering course offered.", "List all the details of Mechanical Engineering course offered"],
+             "responses": ["Mechanical Engineering : \nProgram - B.E.  \nDuration - 4 years \nYear of Establishment - 1994 \nIntake - 180"],
+             "context": [""]
+        },
+
+        {"tag": "Electrical Engg. details",
+             "patterns": ["Give me details of Electrical Engineering course offered by the college", "Details of Electrical Engineering course offered by the institution", "Details of Electrical Engineering course offered.", "List all the details of Electrical Engineering course offered"],
+             "responses": ["Electrical Engineering : \nProgram - B.E.  \nDuration - 4 years \nYear of Establishment - 1995 \nIntake - 60"],
+             "context": [""]
+        },
+
+        {"tag": "EXTC Engg. details",
+             "patterns": ["Give me details of Electronics & Telecommunication Engineering course offered by the college", "Details of Electronics & Telecommunication Engineering course offered by the institution.", "Details of Electronics & Telecommunication Engineering course offered.", "List all the details of Electronics & Telecommunication Engineering course offered", "Give me details of EXTC Engineering course offered by the college", "Details of EXTC Engineering course offered by the institution", "Details of EXTC Engineering course offered.", "List all the details of EXTC Engineering course offered"],
+             "responses": ["Electronics & Telecommunication Engineering : \nProgram - B.E.  \nDuration - 4 years \nYear of Establishment - 2001 \nIntake - 120"],
+             "context": [""]
+        },
+
+        {"tag": "clubs",
+             "patterns": ["Which different clubs are there in the college?", "Which different clubs are offered by the institution?", "Give me a list of clubs.", "List all the clubs"],
+             "responses": ["Different clubs in the college are: \n1. Computer Society Of India(CSI) \n2. Computer Engineering Student Association(CESA) \n3. Mechanical Engineering Student Association(MESA) \n4. Electrical Engineering Student Association(EESA) \n5. LTJSS Racing India \n6. English Club \n7. Natyavishkar(Drama Society) \n8. Marathi Wangmay Mandal \n9. Schenell Racing \n10. TT Racing \n11. Student Council of Electrical Engineering(SCEE) \n12.National Service Scheme(NSS) \n13.LTCOE Debate Team \n14.Trexplore \n15. IEEE LTCE Student Branch 16. Hindi Sahitya Manch(HSM)"],
+             "context": [""]
+        },
+
+        {"tag": "events",
+             "patterns": ["Which different events are there in the college?", "Which different events are offered by the institution?", "Give me a list of clubs.", "List all the clubs"],
+             "responses": ["Different events in the college are: \n1. Zephyr \n2. Telios \n3. Tantragyan \n4. NLC \n5. Yantriki"],
+             "context": [""]
+        },
+
+        {"tag": "admission",
+             "patterns": ["I want to enquire about the admission.", "Can you give me the details of admission?", "Give me a list of documents required for admission", "List all the documents required for admission.","What is the fee structure?","What is the fees for OPEN?","What is the fee for TFWS?","What is the fee for Caste?","What is the fees for EBC?","What is the fees for Economically Backward Class?","What is the fees for the Tution Fee Wavier Scheme?","What is the criteria for admission?", "Criteria for admission in college is?", "List the criteria for admission in the college."],
+             "responses": ["Please specify the type of admission: \n1. New Admission \n2. Existing Admission"],
+             "context": {"New Admission":"n admission","Existing Admission":"e admission"}
+        },
+
+        {"tag": "n admission",
+             "patterns": ["Which documents are required for new admission in the college?", "What documents are required while taking new admission in the institution?", "Give me a list of documents required for new admission.", "List all the documents required for new admission.","What is the fee structure for new admission?","What is the fees for new admission in OPEN?","What is the fee for new admission in TFWS?","What is the fee for new admission in Caste?","What is the fees for new admission in EBC?","What is the fees for new admission in Economically Backward Class?","What is the fees for new admission in the Tution Fee Wavier Scheme?"],
+             "responses": ["Please specify the category to which you want to enquire : \n1. 1st year Engineering  \n2. Direct 2nd year Engineering "],
+             "context": {"1st year Engineering":"1st year", "Direct 2nd year":"direct_2nd_year"}
+        },
+
+        {"tag": "1st year",
+         "patterns": ["I want to enquire about the 1st year admission.", "Can you give me the details of 1st year admission?", "I want to enquire about the first year admission.", "Can you give me the details of first year admission?"],
+         "responses": ["Please specify what enquire you would like to do : \n1. Admission Criteria \n2. Documents required \n3. Fee structure "],
+         "context": {"Admission Criteria":"admission 1styear","Documents required":"doc r 1styear","Fee structure":"fee 1styear"}
+        },
+
+        {"tag": "admission 1styear",
+         "patterns": ["What is the criteria for 1st year admission?", "Criteria for 1st year admission in college is?", "List the criteria for 1st year admission in the college."],
+         "responses": ["Criteria for 1st year admission in the college are: \n1. The applicants must be Citizens of India. \n2. passed the 10+2 or equivalent exam with a minimum of 60% marks from any recognized board along with Physics, Mathematics, Chemistry as the compulsory subjects\n3. The applicants must have passed SSC and HSC or Diploma in Engineering from a recognised school or institution in Maharashtra state. \n4. Candidates whose father or mother is domiciled in Maharashtra are also eligible for admission. These candidates must submit a domicile certificate. \n5. Also,under All India Candidature Candidates and Jammu & Kashmir Migrant Candidature Candidates, Students from any state can apply for B.Tech admission in Maharashtra \n6.Score of JEE MAIN/ CET greater than or equal to the cut-off"],
+         "context": [""]
+        },
+
+        {"tag": "doc r 1styear",
+         "patterns": ["What are documents required for 1st year admission?", "Documents required for 1st year admission in college", "List the are documents required for 1st year admission in the college."],
+         "responses": ["List of documents required for admission in 1st year Engineering are: \n1. CET Score Card/ JEE Score Card  \n2. DTE Registration Letter \n3. SSC Marksheet \n4. SSC Passing Marksheet \n5. HSC Marksheet \n6. HSC Passing Certificate \n7. Leaving Certificate \n8. Domicile Certificate / Birth Certificate \n9. Nationality Certificate \n10. Aadhar Card (Xerox) \n11. Photo \n12.Thumb Impression \n13. Signature \n14. CAP Aknowledgement Letter \n15. Birth Certificate"],
+         "context": [""]
+        },
+
+        {"tag": "fee 1styear",
+         "patterns": ["What is the fee structure for 1st year engineering?", "What is the fees for first year engineering?", "Can you tell me the fees for 1st year engineering?"],
+         "responses": ["Please specify the category to which you want to enquire : \n1. TFWS  \n2. Caste \n3. EBC \n4. OPEN"],
+         "context": {"TFWS":"1st year tfws","Caste":"1st year caste","EBC":"1st year ebc","OPEN":"1st year open"}
+        },
+
+        {"tag": "1st year tfws",
+         "patterns": ["What is the fee structure for 1st year engineering TFWS?", "What is the fees for first year engineering TFWS?", "Can you tell me the fees for 1st year engineering TFWS?"],
+         "responses": ["Fees for 1st year Engineering TFWS is Rs. 12,568"],
+         "context": [""]
+        },
+
+        {"tag": "1st year caste",
+         "patterns": ["What is the fee structure for 1st year engineering for SC/ST/NT Caste?", "What is the fees for first year engineering for SC/ST/NT Caste?", "Can you tell me the fees for 1st year engineering for SC/ST/NT Caste?"],
+         "responses": ["Fees for 1st year Engineering for SC/ST/NT Caste is Rs. 10,568"],
+         "context": [""]
+        },
+
+        {"tag": "1st year ebc",
+         "patterns": ["What is the fee structure for 1st year engineering EBC / OBC?", "What is the fees for first year engineering EBC / OBC?", "Can you tell me the fees for 1st year engineering EBC / OBC?"],
+         "responses": ["Fees for 1st year Engineering EBC is Rs. 65,000"],
+         "context": [""]
+        },
+
+        {"tag": "1st year open",
+         "patterns": ["What is the fee structure for 1st year engineering OPENS?", "What is the fees for first year engineering OPEN?", "Can you tell me the fees for 1st year engineering OPENS?"],
+         "responses": ["Fees for 1st year Engineering OPEN is Rs. 1,15,500"],
+         "context": [""]
+        },
+        
+        {"tag": "direct 2nd year",
+         "patterns": ["I want to enquire about the direct 2nd year admission.", "Can you give me the details of direct 2nd year admission?", "I want to enquire about the direct second year admission.", "Can you give me the details of direct second year admission?"],
+         "responses": ["Please specify what enquire you would like to do : \n1. Admission Criteria \n2. Documents required \n3. Fee structure "],
+         "context": {"Admission Criteria":"a c dir2ndyear","Documents required":"doc r dir2ndyear","Fee structure":"fee dir2ndyear"}
+        },
+
+        {"tag": "a c dir2ndyear",
+         "patterns": ["What is the criteria for direct 2nd year admission?", "Criteria for direct 2nd year admission in college is?", "List the criteria for direct 2nd year admission in the college."],
+         "responses": ["Criteria for direct 2nd year admission in the college are: \n1. The applicants must be Citizens of India. \n2. Passed Diploma course in Engineering and Technology with at least 45% marks \n3. 40% marks in case of candidate of Backword class category and person with Disability belonging to maharashtra state only.\n4. The applicants must have passed SSC and Diploma in Engineering from a recognised school or institution in Maharashtra state. \n5. Candidates whose father or mother is domiciled in Maharashtra are also eligible for admission. These candidates must submit a domicile certificate. \n6. Also,under All India Candidature Candidates and Jammu & Kashmir Migrant Candidature Candidates, Students from any state can apply for B.Tech admission in Maharashtra \n7. Diploma all sem marksheets(for DSE students) \n8. Photo \n9.Thumb Impression \n10. Signature"],
+         "context": [""]
+        },
+
+        {"tag": "doc r dir2ndyear",
+         "patterns": ["What are documents required for direct 2nd year admission?", "Documents required for direct 2nd year admission in college", "List the are documents required for direct 2nd year admission in the college."],
+         "responses": ["List of documents required for admission in direct 2nd year Engineering are: \n1. DTE Registration Letter \n2. SSC Marksheet \n3. SSC Passing Marksheet \n4. Diploma Marksheet \n6. Diploma Passing Certificate \n7. Leaving Certificate \n8. Domicile Certificate / Birth Certificate \n9. Nationality Certificate \n10. Aadhar Card (Xerox)"],
+         "context": [""]
+        },
+
+        {"tag": "fee dir2ndyear",
+         "patterns": ["What is the fee structure for direct 2nd year engineering?", "What is the fees for direct second year engineering?", "Can you tell me the fees for direct 2nd year engineering?"],
+         "responses": ["Please specify the category to which you want to enquire : \n1. TFWS  \n2. Caste \n3. EBC / OBC \n4. OPEN"],
+         "context": {"TFWS":"dir2ndyear tfws","Caste":"dir2ndyear caste","EBC":"dir2ndyear ebc","OBC":"dir2ndyear ebc","OPEN":"dir2ndyear open"}
+        },
+
+        {"tag": "dir2ndyear tfws",
+         "patterns": ["What is the fee structure for direct 2nd year engineering TFWS?", "What is the fees for direct second year engineering TFWS?", "Can you tell me the fees for direct 2nd year engineering TFWS?"],
+         "responses": ["Fees for direct 2nd year Engineering TFWS is Rs. 15,568"],
+         "context": [""]
+        },
+
+        {"tag": "dir2ndyear caste",
+         "patterns": ["What is the fee structure for direct second year engineering for SC/ST/NT Caste?", "What is the fees for direct 2nd year engineering for SC/ST/NT Caste?", "Can you tell me the fees for direct 2nd year engineering for SC/ST/NT Caste?"],
+         "responses": ["Fees for direct 2nd year Engineering SC/ST/NT Caste is Rs. 10,568"],
+         "context": [""]
+        },
+
+        {"tag": "dir2ndyear open",
+         "patterns": ["What is the fee structure for direct 2nd year engineering OPENS?", "What is the fees for direct second year engineering OPEN?", "Can you tell me the fees for direct 2nd year engineering OPENS?"],
+         "responses": ["Fees for direct 2nd year Engineering OPEN is Rs. 1,17,500"],
+         "context": [""]
+        },
+
+        {"tag": "e admission",
+             "patterns": ["Which documents are required for existing admission in the college?", "What documents are required while taking existing admission in the institution?", "Give me a list of documents required for existing admission.", "List all the documents required for existing admission.","What is the fee structure for existing admission?","What is the fees for existing admission in OPEN?","What is the fee for existing admission in TFWS?","What is the fee for existing admission in Caste?","What is the fees for existing admission in EBC?","What is the fees for existing admission in Economically Backward Class?","What is the fees for existing admission in the Tution Fee Wavier Scheme?"],
+             "responses": ["Please specify the category to which you want to enquire : \n1. 2nd year Engineering  \n2. 3rd year Engineering  \n3. 4th year Engineering"],
+             "context": {"2nd year Engineering":"2nd year", "3rd year Engineering":"3rd year", "4th year Engineering":"4th year"}
+        },
+
+        {"tag": "2nd year",
+         "patterns": ["I want to enquire about the 2nd year admission.", "Can you give me the details of 2nd year admission?", "I want to enquire about the second year admission.", "Can you give me the details of second year admission?"],
+         "responses": ["Please specify what enquire you would like to do for 2nd year Engineering : \n1. Admission Criteria \n2. Documents required \n3. Fee structure "],
+         "context": {"Admission Criteria":"a c 2ndyear","Documents required":"doc r 2ndyear","Fee structure":"fee 2ndyear"}
+        },
+
+        {"tag": "a c 2ndyear",
+         "patterns": ["What is the criteria for 2nd year admission?", "Criteria for 2nd year admission in college is?", "List the criteria for 2nd year admission in the college."],
+         "responses": ["Criteria for 2nd year admission in the college are: You can carry only 5ext kt to next year.\nint+ext+practical kt = 8\nYou can keep Max 8int kt but should have 0 ext kt and practical kt."],
+         "context": [""]
+        },
+
+        {"tag": "doc r 2ndyear",
+         "patterns": ["What are documents required for 2nd year admission?", "Documents required for 2nd year admission in college", "List the are documents required for 2nd year admission in the college."],
+         "responses": ["List of documents required for admission in 2nd year Engineering are: \n1. Photo \n2.Thumb Impression \n3. Signature \n4.All photocopies of previous semester marksheet\n5. Aadhar Card (Xerox)"],
+         "context": [""]
+        },
+
+        {"tag": "fee 2ndyear",
+         "patterns": ["What is the fee structure for 2nd year engineering?", "What is the fees for second year engineering?", "Can you tell me the fees for 2nd year engineering?"],
+         "responses": ["Please specify the category to which you want to enquire : \n1. TFWS  \n2. Caste \n3. EBC / OBC \n4. OPEN"],
+         "context": {"TFWS":"2nd year tfws","Caste":"2nd year caste","EBC":"2nd year ebc","OPEN":"2nd year open"}
+        },
+
+        {"tag": "2nd year tfws",
+         "patterns": ["What is the fee structure for 2nd year engineering TFWS?", "What is the fees for second year engineering TFWS?", "Can you tell me the fees for 2nd year engineering TFWS?"],
+         "responses": ["Fees for 2nd year Engineering TFWS is Rs. 15,568"],
+         "context": [""]
+        },
+
+        {"tag": "2nd year caste",
+         "patterns": ["What is the fee structure for 2nd year engineering for SC/ST/NT Caste?", "What is the fees for second year engineering for SC/ST/NT Caste?", "Can you tell me the fees for 2nd year engineering for SC/ST/NT Caste?"],
+         "responses": ["Fees for 2nd year Engineering for SC/ST/NT Caste is Rs. 10,568"],
+         "context": [""]
+        },
+
+        {"tag": "2nd year ebc",
+         "patterns": ["What is the fee structure for 2nd year engineering EBC / OBC?", "What is the fees for second year engineering EBC / OBC?", "Can you tell me the fees for 2nd year engineering EBC / OBC?"],
+         "responses": ["Fees for 2nd year Engineering EBC / OBC is Rs. 65,000"],
+         "context": [""]
+        },
+
+        {"tag": "2nd year open",
+         "patterns": ["What is the fee structure for 2nd year engineering OPENS?", "What is the fees for second year engineering OPEN?", "Can you tell me the fees for 2nd year engineering OPENS?"],
+         "responses": ["Fees for 2nd year Engineering OPEN is Rs. 1,17,500"],
+         "context": [""]
+        },
+
+        {"tag": "3rd year",
+         "patterns": ["I want to enquire about the 3rd year admission.", "Can you give me the details of 3rd year admission?", "I want to enquire about the third year admission.", "Can you give me the details of third year admission?"],
+         "responses": ["Please specify what enquire you would like to do for 3rd year Engineering : \n1. Admission Criteria \n2. Documents required \n3. Fee structure "],
+         "context": {"Admission Criteria":"a_c_3rdyear","Documents required":"doc_r_3rdyear","Fee structure":"fee_3rdyear"}
+        },
+
+        {"tag": "a c 3rdyear",
+         "patterns": ["What is the criteria for 3rd year admission?", "Criteria for 3rd year admission in college is?", "List the criteria for 3rd year admission in the college."],
+         "responses": ["Criteria for 3rd year admission in the college are:You can carry only 5ext kt to next year.\nint+ext+practical kt = 8\nYou can keep Max 8int kt but should have 0 ext kt and practical kt."],
+         "context": [""]
+        },
+
+        {"tag": "doc r 3rdyear",
+         "patterns": ["What are documents required for 3rd year admission?", "Documents required for 3rd year admission in college", "List the are documents required for 3rd year admission in the college."],
+         "responses": ["List of documents required for admission in 3rd year Engineering are: \n1. Photo \n2.Thumb Impression \n3. Signature \n4.All photocopies of previous semester marksheet\n5. Aadhar Card (Xerox)"],
+         "context": [""]
+        },
+
+        {"tag": "fee 3rdyear",
+         "patterns": ["What is the fee structure for 3rd year engineering?", "What is the fees for third year engineering?", "Can you tell me the fees for 3rd year engineering?"],
+         "responses": ["Please specify the category to which you want to enquire : \n1. TFWS  \n2. Caste \n3. EBC / OBC \n4. OPEN"],
+         "context": {"TFWS":"3rd year tfws","Caste":"3rd year caste","EBC":"3rd year ebc","OPEN":"3rd year open"}
+        },
+
+        {"tag": "3rd year tfws",
+         "patterns": ["What is the fee structure for 3rd year engineering TFWS?", "What is the fees for third year engineering TFWS?", "Can you tell me the fees for 3rd year engineering TFWS?"],
+         "responses": ["Fees for 3rd year Engineering TFWS is Rs. 15,568"],
+         "context": [""]
+        },
+
+        {"tag": "3rd year caste",
+         "patterns": ["What is the fee structure for 3rd year engineering for SC/ST/NT Caste?", "What is the fees for third year engineering for SC/ST/NT Caste?", "Can you tell me the fees for 3rd year engineering for SC/ST/NT Caste?"],
+         "responses": ["Fees for 3rd year Engineering for SC/ST/NT Caste is Rs. 10,568"],
+         "context": [""]
+        },
+
+        {"tag": "3rd year ebc",
+         "patterns": ["What is the fee structure for 3rd year engineering EBC / OBC?", "What is the fees for third year engineering EBC / OBC?", "Can you tell me the fees for 3rd year engineering EBC / OBC?"],
+         "responses": ["Fees for 3rd year Engineering EBC / OBC is Rs. 65,000"],
+         "context": [""]
+        },
+
+        {"tag": "3rd year open",
+         "patterns": ["What is the fee structure for 3rd year engineering OPENS?", "What is the fees for third year engineering OPEN?", "Can you tell me the fees for 3rd year engineering OPENS?"],
+         "responses": ["Fees for 3rd year Engineering OPEN is Rs. 1,17,500"],
+         "context": [""]
+        },
+
+        {"tag": "4th year",
+         "patterns": ["I want to enquire about the 4th year admission.", "Can you give me the details of 4th year admission?", "I want to enquire about the fourth year admission.", "Can you give me the details of fourth year admission?"],
+         "responses": ["Please specify what enquire you would like to do for 4th year Engineering : \n1. Admission Criteria \n2. Documents required \n3. Fee structure "],
+         "context": {"Admission Criteria":"a c 4thyear","Documents required":"doc r 4thyear","Fee structure":"fee 4thyear"}
+        },
+
+        {"tag": "a c 4thyear",
+         "patterns": ["What is the criteria for 4th year admission?", "Criteria for 4th year admission in college is?", "List the criteria for 4th year admission in the college."],
+         "responses": ["Criteria for 4th year admission in the college are: You can carry only 5ext kt to next year.\nint+ext+practical kt = 8\nYou can keep Max 8int kt but should have 0 ext kt and practical kt."],
+         "context": [""]
+        },
+
+        {"tag": "doc r 4thyear",
+         "patterns": ["What are documents required for 4th year admission?", "Documents required for 4th year admission in college", "List the are documents required for 4th year admission in the college."],
+         "responses": ["List of documents required for admission in 4th year Engineering are: \n1. Photo \n2.Thumb Impression \n3. Signature \n4.All photocopies of previous semester marksheet\n5. Aadhar Card (Xerox)"],
+         "context": [""]
+        },
+
+        {"tag": "fee 4thyear",
+         "patterns": ["What is the fee structure for 4th year engineering?", "What is the fees for fourth year engineering?", "Can you tell me the fees for 4th year engineering?"],
+         "responses": ["Please specify the category to which you want to enquire : \n1. TFWS  \n2. Caste \n3. EBC / OBC \n4. OPEN"],
+         "context": {"TFWS":"4th year tfws","Caste":"4th year caste","EBC":"4th year ebc","OPEN":"4th year open"}
+        },
+
+        {"tag": "4th year tfws",
+         "patterns": ["What is the fee structure for 4th year engineering TFWS?", "What is the fees for fourth year engineering TFWS?", "Can you tell me the fees for 4th year engineering TFWS?"],
+         "responses": ["Fees for 4th year Engineering TFWS is Rs. 15,568"],
+         "context": [""]
+        },
+
+        {"tag": "4th year caste",
+         "patterns": ["What is the fee structure for 4th year engineering for SC/ST/NT Caste?", "What is the fees for fourth year engineering for SC/ST/NT Caste?", "Can you tell me the fees for 4th year engineering for SC/ST/NT Caste?"],
+         "responses": ["Fees for 4th year Engineering for SC/ST/NT Caste is Rs. 10,568"],
+         "context": [""]
+        },
+
+        {"tag": "4th year ebc",
+         "patterns": ["What is the fee structure for 4th year engineering EBC / OBC?", "What is the fees for fourth year engineering EBC / OBC?", "Can you tell me the fees for 4th year engineering EBC / OBC?"],
+         "responses": ["Fees for 4th year Engineering EBC / OBC is Rs. 65,000"],
+         "context": [""]
+        },
+
+        {"tag": "4th year open",
+         "patterns": ["What is the fee structure for 4th year engineering OPENS?", "What is the fees for fourth year engineering OPEN?", "Can you tell me the fees for 4th year engineering OPENS?"],
+         "responses": ["Fees for 4th year Engineering OPEN is Rs. 1,17,500"],
+         "context": [""]
+        },
+   
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        }
+   ]
+}
